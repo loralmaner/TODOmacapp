@@ -7,7 +7,7 @@ aside {
 /* CONTROLS AND BUTTONS */
 .controls {
     display: flex;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 .controls button {
@@ -100,26 +100,26 @@ nav a {
 
 /* LIST */
 
-ul {
+ol {
     list-style: none;
 }
 
 nav .today:hover,
 .nav .today:active {
-    background: rgb(59, 196, 255);
+    background: rgb(var(--color-today));
 }
 
 nav .scheduled:hover,
 .nav .scheduled:active {
-    background: rgb(245, 82, 54);
+    background: rgb(var(--color-scheduled));
 }
 
 nav .all:hover:hover,
 .nav .all:active {
-    background: rgb(27, 33, 34);
+    background: rgb(var(--color-all));
 }
 
 nav .flagged:hover,
 .nav .flagged:active {
-    background: rgb(244, 202, 35);
+    background: rgb(var(--color-flagged));
 }
