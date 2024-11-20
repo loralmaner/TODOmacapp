@@ -9,6 +9,7 @@ body {
         rgb(248, 113, 133),
         rgb(244, 114, 182)
     );
+    color: rgb(237, 232, 232);
 
     min-height: 100vh;
 
@@ -26,5 +27,14 @@ body {
     background: rgb(10, 7, 34);
     border: 2px solid black;
     border-radius: 0.75rem;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
     
+}
+
+aside, main {
+    padding: 1.25rem;
 }
