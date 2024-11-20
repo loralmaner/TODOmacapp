@@ -2,3 +2,36 @@ main {
     width: 66.666667%;
     border-left: 2px solid black;
 }
+
+.add-new {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-new button {
+    font-size: 1.5rem;
+
+    color: beige;
+
+    padding: 0.215rem 0.575rem 0.425rem 0.5rem;
+
+    border-radius: 0.375rem;
+
+    background: rgba(10, 7, 34, 0.6);
+
+    position: relative;
+
+    bottom: 0.275rem;
+    right: -0.275rem;
+}
+
+.add-new button:hover,
+.add-new button:active {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
+.add-new button:focus {
+    outline: none;
+    border: none;
+}
