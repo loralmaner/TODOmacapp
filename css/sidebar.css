@@ -2,3 +2,84 @@ aside {
     background-color: rgb(75, 85, 99);
     width: 33.33333%;
 }
+
+
+/* CONTROLS AND BUTTONS */
+.controls {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.controls button {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.25rem;
+    background: yellow;
+    border-radius: 1rem;
+    border: rgba(0, 0, 0, 0.6);
+    
+
+}
+
+.controls .close {
+    background: rgb(238, 80, 80);
+}
+
+.controls .close:hover, 
+.controls .close:active {
+    background: rgb(243, 5, 5);
+}
+
+.controls .minimize {
+    background: rgb(245, 245, 96);
+}
+
+.controls .minimize:hover, 
+.controls .minimize:active {
+    background: yellow;
+}
+
+.controls .maximize {
+    background: rgb(69, 245, 69);
+}
+
+.controls .maximize:hover, 
+.controls .maximize:active {
+    background: rgb(1, 213, 1);
+}
+
+/* FORM */
+
+input {
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    border-left: 1px solid rgb(55, 66, 81);
+    border-top: 1px solid rgb(55, 65, 81);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.4);
+
+    width: 100%;
+    padding: 0.375rem;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+
+
+input::placeholder {
+    color: whitesmoke;
+    font-weight: normal;
+}
+
+
+
+/* LIST */
+
+ul {
+    list-style: none;
+}
