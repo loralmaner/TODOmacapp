@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="node_modules/normalize.css/">
     <link rel="stylesheet" href="./css/content.css">
@@ -27,7 +30,12 @@
             <input type="text" placeholder="Write a task">
         </form>
 
-        <nav></nav>
+        <nav>
+            <a class="today" href="">Today</a>
+            <a class="scheduled" href="">Scheduled</a>
+            <a class="all" href="">All</a>
+            <a class="flagged" href="">Flagged</a>
+        </nav>
 
         <ul>
             <li></li>
@@ -38,6 +46,14 @@
         <header class="add-new">
             <button>+</button>
         </header>   
+
+
+        <div class="title">
+            <h1 class="today">Today</h1>
+            <h1 class="scheduled">Scheduled</h1>
+            <h1 class="all">All</h1>
+            <h1 class="flagged">Flagged</h1>
+        </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Accusamus error dicta harum labore fugiat aliquam perferendis. 
             Ea, quae in. Architecto doloribus animi 

@@ -59,6 +59,7 @@ input {
     border-top: 1px solid rgb(55, 65, 81);
     border-radius: 0.5rem;
     background: rgba(255, 255, 255, 0.4);
+    margin-bottom: 1.75rem;
 
     width: 100%;
     padding: 0.375rem;
@@ -78,8 +79,47 @@ input::placeholder {
 
 
 
+/* NAVIGATION */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    
+}
+
+nav a {
+
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
 /* LIST */
 
 ul {
     list-style: none;
+}
+
+nav .today:hover,
+.nav .today:active {
+    background: rgb(59, 196, 255);
+}
+
+nav .scheduled:hover,
+.nav .scheduled:active {
+    background: rgb(245, 82, 54);
+}
+
+nav .all:hover:hover,
+.nav .all:active {
+    background: rgb(27, 33, 34);
+}
+
+nav .flagged:hover,
+.nav .flagged:active {
+    background: rgb(244, 202, 35);
 }
