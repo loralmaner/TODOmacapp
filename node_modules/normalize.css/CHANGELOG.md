@@ -30,7 +30,7 @@
 * Remove `::placeholder` styles due to a bug in Edge.
 * More explicitly define font resets on form controls.
 * Remove the `optgroup` normalization needed by the previous font reset.
-* Update text-size-adjust documentation  for IE on Windows Phone
+* Update text-size-adjust documentation for IE on Windows Phone
 * Update OS X reference to macOS
 * Update the semver strategy.
 
