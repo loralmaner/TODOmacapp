@@ -86,6 +86,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     
+    
 }
 
 nav a {
@@ -122,4 +123,46 @@ nav .all:hover:hover,
 nav .flagged:hover,
 .nav .flagged:active {
     background: rgb(var(--color-flagged));
+}
+
+/* NAC ICONS */
+
+nav p {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+
+    stroke: white;
+    fill: white;
+
+    padding: 0.5rem;
+    
+}
+
+.today svg {
+	background-color: rgb(var(--color-today));
+}
+
+.scheduled svg {
+	background-color: rgb(var(--color-scheduled));
+}
+
+.all svg {
+	background-color: rgb(var(--color-all));
+}
+
+.flagged svg {
+	background-color: rgb(var(--color-flagged));
+}
+
+
+
+nav span {
+	font-size: 1.5rem;
+	line-height: 2.25rem;
 }
