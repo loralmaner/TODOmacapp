@@ -50,20 +50,20 @@ h1 {
 
 }
 
-h1.today {
-    color: rgb(var(--color-today));
+h1.active {
+    color: rgb(var(--color-active));
 }
 
-h1.scheduled {
-    color: rgb(var(--color-scheduled));
+h1.finished {
+    color: rgb(var(--color-finished));
 }
 
 h1.all {
     color: rgb(var(--color-all-lighter));
 }
 
-h1.flagged {
-    color: rgb(var(--color-flagged));
+h1.important {
+    color: rgb(var(--color-important));
 }
 
 .todos li {
@@ -78,7 +78,7 @@ h1.flagged {
     flex-grow: 1;
 }
 
-.todos svg {
+/* .todos svg {
 
     flex: none;
 
@@ -95,9 +95,30 @@ h1.flagged {
     cursor: pointer;
 
     
-}
+} */
 
-.todos svg:hover,
+/* .todos svg:hover,
 .todos svg:active {
     fill: rgb(88, 100, 118)
+} */
+
+/* CHECKBOX */
+
+input[type="checkbox"] {
+    display: none;
 }
+
+.custom-checkbox {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    display: flex;
+    background-size: contain;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    fill: rgb(42, 46, 53);
+}
+

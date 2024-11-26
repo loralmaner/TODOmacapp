@@ -1,9 +1,10 @@
 :root {
-    --color-today: 59, 196, 255;
-    --color-scheduled: 245, 82, 54;
+    --color-active: 59, 196, 255;
+    --color-finished: 245, 82, 54;
     --color-all: 27, 33, 34;
     --color-all-lighter: 47, 55, 57;
-    --color-flagged: 244, 202, 35;
+    --color-important: 244, 202, 35;
+    
 
 }
 

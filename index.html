@@ -31,7 +31,7 @@
         </form>
 
         <nav>
-            <a href="#" class="today">
+            <a href="#" class="active">
                 <p>
                     <svg>
                         <path
@@ -41,9 +41,9 @@
                     <span>3</span>
                 </p>
 
-                Today
+                Active
             </a>
-            <a href="#" class="scheduled">
+            <a href="#" class="finished">
                 <p>
                     <svg>
                         <path
@@ -53,7 +53,7 @@
                     <span>8</span>
                 </p>
 
-                Scheduled
+                Finished
             </a>
 
             <a href="#" class="all">
@@ -70,7 +70,7 @@
                 All
             </a>
 
-            <a href="#" class="flagged">
+            <a href="#" class="important">
                 <p>
                     <svg>
                         <path
@@ -81,7 +81,7 @@
                     <span>1</span>
                 </p>
 
-                Flagged
+                Important
             </a>
         
         </nav>
@@ -96,29 +96,26 @@
 
 
         <div class="title">
-            <h1 class="today">Today</h1>
-            <h1 class="scheduled">Scheduled</h1>
+            <h1 class="today">Active</h1>
+            <h1 class="scheduled">Finished</h1>
             <h1 class="all">All</h1>
-            <h1 class="flagged">Flagged</h1>
+            <h1 class="flagged">Important</h1>
 
             <ol class="todos">
                 <li>
-                    <svg>
-                        <circle cx="15" cy="16" r="12"></circle>
-                    </svg>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Accusamus error dicta harum labore fugiat aliquam perferendis. 
-                        Ea, quae in. Architecto doloribus animi 
-                        dignissimos consequatur fugiat officiis excepturi numquam
-                         fuga sapiente?
-                        </p>
-                </main>
+                   <label>
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span>
+                   </label>
+                    <p>
+                    </p>
+                
                 </li>
             </ol>
 
         </div>
           
-
+    </main>
 </div>
 
 </body>

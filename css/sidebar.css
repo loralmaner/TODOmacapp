@@ -14,7 +14,7 @@ aside {
     width: 1rem;
     height: 1rem;
     margin: 0.25rem;
-    background: yellow;
+    background: yow;
     border-radius: 1rem;
     border: rgba(0, 0, 0, 0.6);
     
@@ -36,7 +36,7 @@ aside {
 
 .controls .minimize:hover, 
 .controls .minimize:active {
-    background: yellow;
+    background: yow;
 }
 
 .controls .maximize {
@@ -105,14 +105,14 @@ ol {
     list-style: none;
 }
 
-nav .today:hover,
-.nav .today:active {
-    background: rgb(var(--color-today));
+nav .active:hover,
+.nav .active:active {
+    background: rgb(var(--color-active));
 }
 
-nav .scheduled:hover,
-.nav .scheduled:active {
-    background: rgb(var(--color-scheduled));
+nav .finished:hover,
+.nav .finished:active {
+    background: rgb(var(--color-finished));
 }
 
 nav .all:hover:hover,
@@ -120,9 +120,9 @@ nav .all:hover:hover,
     background: rgb(var(--color-all));
 }
 
-nav .flagged:hover,
-.nav .flagged:active {
-    background: rgb(var(--color-flagged));
+nav .important:hover,
+.nav .important:active {
+    background: rgb(var(--color-important));
 }
 
 /* NAC ICONS */
@@ -144,20 +144,20 @@ nav svg {
     
 }
 
-.today svg {
-	background-color: rgb(var(--color-today));
+.active svg {
+	background-color: rgb(var(--color-active));
 }
 
-.scheduled svg {
-	background-color: rgb(var(--color-scheduled));
+.finished svg {
+	background-color: rgb(var(--color-finished));
 }
 
 .all svg {
 	background-color: rgb(var(--color-all));
 }
 
-.flagged svg {
-	background-color: rgb(var(--color-flagged));
+.important svg {
+	background-color: rgb(var(--color-important));
 }
 
 
@@ -166,3 +166,4 @@ nav span {
 	font-size: 1.5rem;
 	line-height: 2.25rem;
 }
+
