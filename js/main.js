@@ -19,10 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const newTask = document.createElement('li');
 
         newTask.innerHTML = `
-            <label>
-                <input type="checkbox">
-                <span class="custom-checkbox"></span>
-            </label>
             <p>${text}</p>
         `;
 
