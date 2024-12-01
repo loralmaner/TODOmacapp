@@ -3,6 +3,8 @@
 // Pretvor svg na input, ktory po kliknuti zrusi ulohu v content sekcii a presunie ju do ukoncenych
 // pripocita sa do spanu v nave
 
+// 
+
 // Po kliknuti na nav v sekcii sidebar, sa otvori okno z ulohami v content sekcii
 
 // Search funkcia vyhlada ulohu 
@@ -41,3 +43,48 @@ document.querySelector(' .add-new button').addEventListener('click', function ()
         createNewTask(taskText);
     }
 });
+
+
+
+// NAV ITEMS - CONTENT WINDOW
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Teraz je DOM načítaný a skript môže manipulovať s elementmi
+    const navItems = document.querySelectorAll('.nav-item'); // Vyberieme vsetky odkazy v nav
+    const contentSections = document.querySelectorAll('.title h1'); // Vyberieme vsetky h1 v title
+
+
+    //Predtym nez nieco nastane skryjeme vsetky sekcie, upravujeme tym vlastne css
+    contentSections.forEach(section => {
+        section.style.display = 'none';
+    });
+
+
+    // Predvolený stav - zobrazíme "Active"
+    document.querySelector('.active-content').style.display = 'block';
+
+
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Zabránime predvolenému správaní odkazu
+
+            const target = item.getAttribute('data-target');
+            
+             contentSections.forEach(section => {
+                section.style.display = 'none';
+
+            });
+
+            const targetSection = document.querySelector(`h1.${target}-content`);
+
+            if (targetSection) {
+                targetSection.style.display = 'block';
+            }
+
+            navItems.forEach(nav => nav.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
+});
+
