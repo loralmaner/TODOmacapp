@@ -11,38 +11,49 @@
 
 
 
-function createNewTask (text) {
-    const newTask = document.createElement('li');
 
-    newTask.innerHTML = `
-    <label>
-        <input type="checkbox"></input>
-        <span class="custom-checkbox"></span>
-    </label>
-    <p>${text}</p>
-    `;
+// VYTVORENIE NOVEJ ULOHY 
+document.addEventListener("DOMContentLoaded", function() {
+    // Funkcia na vytvorenie novej úlohy
+    function createNewTask(text) {
+        const newTask = document.createElement('li');
 
+        newTask.innerHTML = `
+            <label>
+                <input type="checkbox">
+                <span class="custom-checkbox"></span>
+            </label>
+            <p>${text}</p>
+        `;
 
-    const checkbox = newTask.querySelector('input[type="checkbox"]');
-    checkbox.addEventListener('change', function() {
-        if(checkbox.checked) {
-            newTask.classList.add('finished');
-        } else {
-            newTask.classList.remove('finished');
+        const checkbox = newTask.querySelector('input[type="checkbox"]');
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                // Presun úlohy do sekcie "Finished"
+                const finishedSection = document.querySelector('.finished-tasks');
+                finishedSection.appendChild(newTask);
+
+            } else {
+                // Presun úlohy do sekcie "Active"
+                const activeSection = document.querySelector('.active-tasks');
+                activeSection.appendChild(newTask);
+            }
+        });
+
+        // Začiatočne pridáme úlohu do sekcie "Active"
+        const activeSection = document.querySelector('.active-tasks');
+        activeSection.appendChild(newTask);
+    }
+
+    // Pridanie novej úlohy po kliknutí na tlačidlo "+"
+    document.querySelector('.add-new button').addEventListener('click', function () {
+        const taskText = prompt("ADD NEW TASK:");
+        if (taskText) {
+            createNewTask(taskText);
         }
     });
-
-    const container = document.querySelector('ol');
-    container.appendChild(newTask);
-
-}
-
-document.querySelector(' .add-new button').addEventListener('click', function () {
-    const taskText = prompt("ADD NEW TASK:");
-    if (taskText) {
-        createNewTask(taskText);
-    }
 });
+
 
 
 
@@ -64,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.active-content').style.display = 'block';
 
 
-    
+
     navItems.forEach(item => {
         item.addEventListener('click', (event) => {
             event.preventDefault(); // Zabránime predvolenému správaní odkazu
@@ -87,4 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 
